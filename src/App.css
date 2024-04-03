@@ -1,0 +1,89 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+
+
+.imgg {
+  background: url(./backgg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 50%;
+  height: 75%;
+  box-shadow: 1px 2px 13px 5px rgb(20, 30, 20, 0.5);
+  backdrop-filter: blur(1vw);
+  border-radius: 2vw 2vw 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: #5a0101;
+  font-size: 2vw;
+
+  text-shadow: 2px 2px #876060;
+}
+
+.para {
+  font-size: 1.5vw;
+  color: white;
+  padding: 1vw;
+  text-align: center;
+  font-style: italic;
+  /* font-weight: lighter; */
+}
+
+.btn {
+  margin: 4vw;
+  padding: 0.4vw 1vw 0.4vw 1vw;
+  font-size: 1.5vw;
+  border-radius: 10px;
+  border: none;
+  background: #e78574;
+}
+
+@media (max-width: 600px) {
+  .App {
+    height: 100vh;
+  }
+
+  .main {
+    width: 75%;
+    height: 50%;
+    text-align: center;
+
+  }
+
+  .container {
+    align-items: center;
+  }
+
+
+  .heading {
+    font-size: 5vw;
+    color: #f8c10a;
+  }
+
+  .para {
+    font-size: 5vw;
+  }
+
+  .btn {
+    padding: 1vw 3vw 1vw 3vw;
+    font-size: 5vw;
+  }
+}
